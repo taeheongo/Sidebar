@@ -14,10 +14,14 @@
     <link href="assets/css/styles.css" rel="stylesheet" />
     <title>Sidebar menu responsive</title>
   </head>
-  <body>
+  <body id="body-pd">
     <header class="header" id="header">
       <div class="header__toggle">
         <i class="bx bx-menu" id="header-toggle"></i>
+      </div>
+
+      <div class="header__img">
+        <img src="assets/img/perfil.jpg" alt="" />
       </div>
     </header>
 
@@ -30,14 +34,16 @@
           </a>
 
           <div class="nav__list">
-            <a href="#" class="nav__link">
+            <a href="#" class="nav__link active">
               <i class="bx bx-grid-alt nav__icon"></i>
               <span class="nav__name">Dashboard</span>
             </a>
+
             <a href="#" class="nav__link">
-              <i class="bx bx-grid-alt nav__icon"></i>
+              <i class="bx bx-user nav__icon"></i>
               <span class="nav__name">Users</span>
             </a>
+
             <a href="#" class="nav__link">
               <i class="bx bx-message-square-detail nav__icon"></i>
               <span class="nav__name">Messages</span>
@@ -59,8 +65,16 @@
             </a>
           </div>
         </div>
+
+        <a href="#" class="nav__link">
+          <i class="bx bx-log-out nav__icon"></i>
+          <span class="nav__name">Log Out</span>
+        </a>
       </nav>
     </div>
+
+    <h1>Components</h1>
+
     <!-- MAIN JS -->
     <script src="assets/js/index.js"></script>
   </body>
